@@ -1,0 +1,37 @@
+micronaut:
+  application:
+    name: CountryCity
+  server:
+    port: 7070
+
+
+---
+micronaut:
+  views:
+    thymeleaf:
+      enabled: true
+
+---
+micronaut:
+  router:
+    static-resources:
+      default:
+        mapping: "/**"
+      '*':
+        paths:
+        - "classpath:static"
+
+
+
+
+
+---
+
+datasources:
+  default:
+    url: jdbc:mariadb://127.0.0.1:3306/World
+    driverClassName: org.mariadb.jdbc.Driver
+    username: root
+    password: 'Hello@1234'
+    dialect: MYSQL
+    schema-generate: create

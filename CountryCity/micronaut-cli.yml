@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: io.hashimati.countrycity
+---
+testFramework: junit
+sourceLanguage: java

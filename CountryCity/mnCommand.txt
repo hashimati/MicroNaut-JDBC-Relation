@@ -1,0 +1,1 @@
+mn create-app io-hashimati-countrycity --profile service --lang java --build gradle --features jdbc-hikari  --features jdbc-tomcat  --features data-jdbc
